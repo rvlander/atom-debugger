@@ -3,7 +3,6 @@
 GDB = require './backend/gdb/gdb'
 fs = require 'fs'
 path = require 'path'
-AsmViewer = require './asm-viewer'
 
 
 module.exports =

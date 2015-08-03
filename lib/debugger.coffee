@@ -32,6 +32,7 @@ module.exports = Debugger =
       @debuggerView = null
     else
       @openDialogView = new OpenDialogView (target, mainBreak) =>
+        console.log(target)
         if fs.existsSync(target)
           @debuggerView = new DebuggerView(target, mainBreak)
         else
